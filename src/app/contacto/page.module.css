@@ -1,0 +1,235 @@
+.page {
+    padding-top: 80px;
+}
+
+/* Hero */
+.hero {
+    position: relative;
+    padding: var(--space-20) 0;
+    text-align: center;
+}
+
+.heroBackground {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
+}
+
+.heroContent {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: var(--text-5xl);
+    color: var(--color-white);
+    margin-bottom: var(--space-4);
+}
+
+.hero p {
+    font-size: var(--text-xl);
+    color: var(--color-gray);
+}
+
+/* Contact Section */
+.contactSection {
+    background: var(--color-light);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-16);
+    align-items: start;
+}
+
+@media (max-width: 968px) {
+    .grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-10);
+    }
+}
+
+/* Info */
+.info h2 {
+    font-size: var(--text-3xl);
+    margin-bottom: var(--space-4);
+}
+
+.infoDescription {
+    color: var(--color-dark-light);
+    line-height: 1.8;
+    margin-bottom: var(--space-8);
+}
+
+.contactList {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+}
+
+.contactList li {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-4);
+}
+
+.contactIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+    border-radius: var(--radius-lg);
+    color: var(--color-white);
+    flex-shrink: 0;
+}
+
+.contactList li div:last-child {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactList li strong {
+    font-size: var(--text-lg);
+    color: var(--color-primary);
+    margin-bottom: var(--space-1);
+}
+
+.contactList li span,
+.contactList li a {
+    color: var(--color-dark-light);
+    font-size: var(--text-sm);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+.contactList li a:hover {
+    color: var(--color-accent);
+}
+
+/* Form */
+.formWrapper {
+    background: var(--color-white);
+    padding: var(--space-10);
+    border-radius: var(--radius-2xl);
+    box-shadow: var(--shadow-xl);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+}
+
+.form h3 {
+    font-size: var(--text-2xl);
+    color: var(--color-primary);
+    margin-bottom: var(--space-4);
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.field label {
+    font-weight: 500;
+    color: var(--color-dark);
+    font-size: var(--text-sm);
+}
+
+.field input,
+.field textarea {
+    padding: var(--space-3) var(--space-4);
+    border: 2px solid var(--color-gray);
+    border-radius: var(--radius-md);
+    font-size: var(--text-base);
+    transition: all var(--transition-fast);
+}
+
+.field input:focus,
+.field textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(26, 54, 93, 0.1);
+}
+
+.field textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.inputError {
+    border-color: #e53e3e !important;
+}
+
+.error {
+    font-size: var(--text-xs);
+    color: #e53e3e;
+}
+
+.errorAlert {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-4);
+    background: #fed7d7;
+    color: #c53030;
+    border-radius: var(--radius-md);
+    font-size: var(--text-sm);
+}
+
+/* Success */
+.successMessage {
+    text-align: center;
+    padding: var(--space-10);
+}
+
+.successMessage svg {
+    color: #38a169;
+    margin-bottom: var(--space-4);
+}
+
+.successMessage h3 {
+    font-size: var(--text-2xl);
+    color: var(--color-primary);
+    margin-bottom: var(--space-2);
+}
+
+.successMessage p {
+    color: var(--color-dark-light);
+    margin-bottom: var(--space-6);
+}
+
+/* Map */
+.mapSection {
+    height: 400px;
+}
+
+.mapPlaceholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    color: var(--color-white);
+}
+
+.mapPlaceholder svg {
+    margin-bottom: var(--space-4);
+    opacity: 0.5;
+}
+
+.mapPlaceholder span {
+    font-family: var(--font-heading);
+    font-size: var(--text-2xl);
+    margin-bottom: var(--space-2);
+}
+
+.mapPlaceholder p {
+    opacity: 0.7;
+}

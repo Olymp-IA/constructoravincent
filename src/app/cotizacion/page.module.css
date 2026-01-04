@@ -1,0 +1,246 @@
+.page {
+    padding-top: 80px;
+}
+
+/* Hero */
+.hero {
+    position: relative;
+    padding: var(--space-20) 0;
+    text-align: center;
+}
+
+.heroBackground {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
+}
+
+.heroContent {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: var(--text-5xl);
+    color: var(--color-white);
+    margin-bottom: var(--space-4);
+}
+
+.hero p {
+    font-size: var(--text-xl);
+    color: var(--color-gray);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: var(--text-3xl);
+    }
+
+    .hero p {
+        font-size: var(--text-lg);
+    }
+}
+
+/* Form Section */
+.formSection {
+    background: var(--color-light);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: var(--space-10);
+    align-items: start;
+}
+
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Form */
+.formWrapper {
+    background: var(--color-white);
+    padding: var(--space-10);
+    border-radius: var(--radius-2xl);
+    box-shadow: var(--shadow-xl);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+}
+
+.formTitle {
+    font-size: var(--text-2xl);
+    color: var(--color-primary);
+    margin-bottom: var(--space-4);
+}
+
+.formGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-6);
+}
+
+@media (max-width: 640px) {
+    .formGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.field label {
+    font-weight: 500;
+    color: var(--color-dark);
+    font-size: var(--text-sm);
+}
+
+.field input,
+.field select,
+.field textarea {
+    padding: var(--space-3) var(--space-4);
+    border: 2px solid var(--color-gray);
+    border-radius: var(--radius-md);
+    font-size: var(--text-base);
+    transition: all var(--transition-fast);
+    background: var(--color-white);
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(26, 54, 93, 0.1);
+}
+
+.field textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.inputError {
+    border-color: #e53e3e !important;
+}
+
+.error {
+    font-size: var(--text-xs);
+    color: #e53e3e;
+}
+
+.errorAlert {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-4);
+    background: #fed7d7;
+    color: #c53030;
+    border-radius: var(--radius-md);
+    font-size: var(--text-sm);
+}
+
+/* Success Message */
+.successMessage {
+    text-align: center;
+    padding: var(--space-12) var(--space-6);
+}
+
+.successMessage svg {
+    color: #38a169;
+    margin-bottom: var(--space-6);
+}
+
+.successMessage h2 {
+    font-size: var(--text-2xl);
+    color: var(--color-primary);
+    margin-bottom: var(--space-4);
+}
+
+.successMessage p {
+    color: var(--color-dark-light);
+    margin-bottom: var(--space-8);
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Sidebar */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+}
+
+.infoCard,
+.contactCard {
+    background: var(--color-white);
+    padding: var(--space-8);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-lg);
+}
+
+.infoCard h3,
+.contactCard h3 {
+    font-size: var(--text-lg);
+    color: var(--color-primary);
+    margin-bottom: var(--space-6);
+    padding-bottom: var(--space-4);
+    border-bottom: 2px solid var(--color-gray);
+}
+
+.benefits {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+.benefits li {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    color: var(--color-dark);
+    font-size: var(--text-sm);
+}
+
+.benefits li svg {
+    flex-shrink: 0;
+    color: var(--color-accent);
+}
+
+.contactList {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+.contactList li {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    font-size: var(--text-sm);
+}
+
+.contactList li svg {
+    flex-shrink: 0;
+    color: var(--color-primary);
+}
+
+.contactList li a {
+    color: var(--color-dark);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+.contactList li a:hover {
+    color: var(--color-accent);
+}

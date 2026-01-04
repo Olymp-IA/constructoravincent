@@ -1,0 +1,93 @@
+:root {
+    /* Paleta de Colores - European Modernism / Engineering Elegance */
+    --color-base: #f5f3f0;
+    /* Off-White / Piedra clara */
+    --color-base-alt: #ebe8e4;
+    /* Gris Piedra */
+    --color-surface: #faf9f7;
+    /* Superficie clara */
+
+    --color-dark: #1a1a1a;
+    /* Gris Antracita */
+    --color-dark-soft: #2d2d2d;
+    /* Antracita suave */
+    --color-text: #1a1a1a;
+    /* Texto principal */
+    --color-text-muted: #6b6b6b;
+    /* Texto secundario */
+
+    --color-accent: #8b6914;
+    /* Bronce mate */
+    --color-accent-light: #a67c00;
+    /* Cobre oxidado */
+    --color-accent-dark: #705412;
+    /* Bronce oscuro */
+
+    --color-line: rgba(26, 26, 26, 0.12);
+    /* Líneas sutiles */
+    --color-line-dark: rgba(26, 26, 26, 0.25);
+
+    /* Tipografía - Serif + Sans-Serif técnica */
+    --font-serif: 'Cinzel', 'Playfair Display', Georgia, serif;
+    --font-sans: 'Manrope', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+    /* Escala tipográfica */
+    --text-xs: 0.75rem;
+    /* 12px */
+    --text-sm: 0.875rem;
+    /* 14px */
+    --text-base: 1rem;
+    /* 16px */
+    --text-lg: 1.125rem;
+    /* 18px */
+    --text-xl: 1.25rem;
+    /* 20px */
+    --text-2xl: 1.5rem;
+    /* 24px */
+    --text-3xl: 2rem;
+    /* 32px */
+    --text-4xl: 2.5rem;
+    /* 40px */
+    --text-5xl: 3.5rem;
+    /* 56px */
+    --text-6xl: 4.5rem;
+    /* 72px */
+    --text-7xl: 6rem;
+    /* 96px */
+    --text-8xl: 8rem;
+    /* 128px */
+
+    /* Espaciado arquitectónico */
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 1.25rem;
+    --space-6: 1.5rem;
+    --space-8: 2rem;
+    --space-10: 2.5rem;
+    --space-12: 3rem;
+    --space-16: 4rem;
+    --space-20: 5rem;
+    --space-24: 6rem;
+    --space-32: 8rem;
+    --space-40: 10rem;
+    --space-48: 12rem;
+
+    /* Grid arquitectónico */
+    --grid-gap: 2rem;
+    --container-max: 1400px;
+    --container-narrow: 900px;
+
+    /* Transiciones suaves - "hormigón pulido" */
+    --transition-slow: 800ms cubic-bezier(0.16, 1, 0.3, 1);
+    --transition-base: 500ms cubic-bezier(0.16, 1, 0.3, 1);
+    --transition-fast: 300ms cubic-bezier(0.16, 1, 0.3, 1);
+
+    /* Z-index */
+    --z-base: 1;
+    --z-sticky: 100;
+    --z-fixed: 200;
+    --z-overlay: 300;
+    --z-modal: 400;
+}
