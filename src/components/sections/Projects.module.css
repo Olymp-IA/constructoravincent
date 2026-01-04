@@ -3,9 +3,21 @@
     padding: var(--space-32) 0;
 }
 
+@media (max-width: 768px) {
+    .projects {
+        padding: var(--space-16) 0;
+    }
+}
+
 /* Header */
 .header {
     margin-bottom: var(--space-16);
+}
+
+@media (max-width: 768px) {
+    .header {
+        margin-bottom: var(--space-10);
+    }
 }
 
 .eyebrow {
@@ -22,6 +34,19 @@
 .title {
     font-size: var(--text-5xl);
     color: var(--color-base);
+    word-break: break-word;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: var(--text-3xl);
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: var(--text-2xl);
+    }
 }
 
 /* Lista */
@@ -46,6 +71,13 @@
     .item {
         grid-template-columns: 1fr;
         gap: var(--space-8);
+    }
+}
+
+@media (max-width: 480px) {
+    .item {
+        padding: 0 var(--space-4);
+        gap: var(--space-6);
     }
 }
 
