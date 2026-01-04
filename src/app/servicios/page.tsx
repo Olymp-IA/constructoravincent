@@ -135,7 +135,7 @@ export default function ServiciosPage() {
                                         </li>
                                     ))}
                                 </ul>
-                                <Button href="/cotizacion" variant="ghost" className={styles.serviceBtn}>
+                                <Button href="/cotizacion" variant="outline" className={styles.serviceBtn}>
                                     Solicitar información
                                     <ArrowRight size={18} />
                                 </Button>

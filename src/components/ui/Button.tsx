@@ -31,7 +31,7 @@ export default function Button({
     const motionProps = {
         whileHover: { scale: disabled ? 1 : 1.01 },
         whileTap: { scale: disabled ? 1 : 0.99 },
-        transition: { duration: 0.3, ease: [0.16, 1, 0.3, 1] },
+        transition: { duration: 0.3, ease: 'easeOut' as const },
     };
 
     if (href) {

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { OlympiaFooter } from '@/components/ui/OlympiaFooter';
 import styles from './Footer.module.css';
 
 const navLinks = [
@@ -71,6 +72,7 @@ export default function Footer() {
                     <p className={styles.copyright}>
                         © {currentYear} Constructora Vincent. Todos los derechos reservados.
                     </p>
+                    <OlympiaFooter variant="minimal" />
                     <div className={styles.legal}>
                         <Link href="/privacidad">Privacidad</Link>
                         <Link href="/terminos">Términos</Link>
@@ -80,3 +82,4 @@ export default function Footer() {
         </footer>
     );
 }
+
